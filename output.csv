@@ -1,0 +1,6 @@
+﻿ID,Extensão da rede(m),Coordenada X,Coordenada Y,MT(SIM/NÃO),AT(SIM/NÃO),Intervenção(INST/ESPI),Equipamento,Altura poste(m),Esforço(kgf),Instalação,Protocolo de aprovação do ponto,Diâmetro cabo (mm),Tipo de cabo,Diâmetro de apoio(mm),Logradouro,Bairro,Observações
+1,,-46.434364,-23.656010,SIM,NÃO,ESPI,NOEQ,12,35,EXIS,,20,FIBR,4.8
+2,,-46.434208,-23.656038,SIM,NÃO,ESPI,NOEQ,12,14,EXIS,,20,FIBR,4.8
+3,,-46.433575,-23.656094,SIM,NÃO,INST,NOEQ,12,89,NOVA,,20,FIBR,4.8
+4,,-46.433355,-23.656026,SIM,NÃO,INST,NOEQ,12,1,NOVA,,20,FIBR,4.8
+5,,-46.433044,-23.655976,SIM,NÃO,INST,NOEQ,12,12,NOVA,,20,FIBR,4.8
