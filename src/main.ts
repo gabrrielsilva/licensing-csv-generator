@@ -1,6 +1,13 @@
 import fs from 'node:fs';
 
-const attOut = fs.readFileSync('assets/BLOCO POSTE PROCISA.txt', 'utf-8');
+const filePath = process.argv[2];
+
+if (!filePath) {
+  console.error('Forneça o caminho do arquivo de texto.');
+  process.exit(1);
+}
+
+const attOut = fs.readFileSync(filePath, 'utf-8');
 const attOutRows = attOut.trim().split('\n');
 
 // Remove header
@@ -27,4 +34,6 @@ attOutRows.map(row => {
 
 const byteOrderMark = '\uFEFF';
 const csvContent = byteOrderMark + csvRows.join('\n');
-fs.writeFileSync('output.csv', csvContent, 'utf-8');
+const outputFilePath = filePath.replace(/\.txt$/, '.csv');
+
+fs.writeFileSync(outputFilePath, csvContent, 'utf-8');
